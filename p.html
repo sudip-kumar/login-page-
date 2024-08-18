@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+			background-image:url("2.jpg");       
+			justify-content:center;
+            align-items: center;	
+			padding:400px;
+            background-size:cover;
+            background-position:center;      
+        }
+		.sidephoto{
+			background:rgba(255, 255, 255, 0.1);
+			background-image:url("4.jpg");
+			width:300px;	
+			height:42.5%;
+			 border-radius: 15px;
+			background-size:cover;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+			background-color:white;
+            border-radius:15px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .input-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .input-group a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #aaa;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .login-container .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container .btn:hover {
+            background-color: #555;
+        }
+
+        .login-container .register {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .login-container .register a {
+            text-decoration: none;
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="enter your university roll number" id="roll" name="roll" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Enter Your Password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me"><font color="blue">Remember me</font></label>
+                <a href="#"><font color="red">Forgot Password?</font></a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="register">
+           <font color="blue"> Don't have an account?</font><a href="#"><font color="blue">Register</a></font>
+        </div>
+    </div><div  class="sidephoto"></div>
+	
+</body>
+</html>
