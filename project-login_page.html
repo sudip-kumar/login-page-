@@ -1,0 +1,116 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+			color:#9966FF;
+            display:flex;
+			background-color:#3b3b50;
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+        .container{
+            display:flex;
+            height: 500px;
+            background-color: #2e2e3e;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .left {
+            flex: 1;
+            background-image: url("tala.jpg");
+            background-size:cover;
+            background-position:center;
+            display: flex;
+            
+        }
+        .right {
+            flex: 1;
+			width:600px;
+            padding:40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right h2 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+        .right input[type="text"], .right input[type="password"], .right input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            background-color: #38384d;
+            border: 1px solid #5b5b6e;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        .right input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .right label {
+            font-size: 14px;
+            color: #9f9fb3;
+        }
+        .right button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6d4fc4;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .right .other-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .right .other-options button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #5b5b6e;
+            background-color: #38384d;
+            color: #ffffff;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .right .other-options button:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+        </div>
+        <div class="right">
+            <h2>Create an account</h2>
+            <form action="#">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Enter your password" required>
+                <label>
+                    <input type="checkbox" required> I agree to the <a href="#" style="color: #6d4fc4;">Terms & Conditions</a>
+                </label>
+                <button type="submit">Create account</button>
+            </form>
+            <div class="other-options">
+               <button>Google</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
